@@ -1,6 +1,6 @@
 const { Router} = require('express') 
 const ContatosController = require('../controllers/ContatosController.js');
-const checkIsAdmin = require('../middlewares/checkisAdmin.js');
+const checkIsAdmin = require('../middlewares/checkIsAdmin.js');
 
 const contatosRouter = Router()
 const contatosController = ContatosController
