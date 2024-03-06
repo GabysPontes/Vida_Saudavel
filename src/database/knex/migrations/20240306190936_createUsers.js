@@ -4,10 +4,10 @@ exports.up = (knex) => {
       table.string("name").notNullable();
       table.string("email").notNullable();
       table.string("password").notNullable();
-      table.boolean("isAdmin").defaulTo("false");
+      table.boolean("isAdmin").defaultTo("false");
 
-      table.timestamp("created_at").defaulTo(knex.fn.now());
-      table.timestamp("updated_at").defaulTo(knex.fn.now());
+      table.timestamp("created_at").defaultTo(knex.fn.now());
+      table.timestamp("updated_at").defaultTo(knex.fn.now());
     })
   };
   
