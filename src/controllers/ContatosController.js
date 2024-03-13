@@ -3,11 +3,11 @@ const knex  = require('../database/knex');
 class ContatosController {
 
     async createContacts(req, res) {
-        const { name, email, text } = req.body;
+        const { name, email, message } = req.body;
         await knex("contatos").insert({
            name,
            email,
-           text,
+           message,
         })
         res.status(201).json('Contato cadastrado com sucesso!');
     }
