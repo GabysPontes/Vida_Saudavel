@@ -1,5 +1,4 @@
 require("dotenv/config")
-const migrationRun = require('./src/database/mysql/migrations')
 
 const express = require('express')
 const app = express()
